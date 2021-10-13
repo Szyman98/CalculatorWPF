@@ -8,7 +8,7 @@
         Title="Calculator" Height="450" Width="280"
         Background="#232f34">
 
-   
+
 
     <Window.Resources>
         <Style x:Key="StyleButton" TargetType="Button">
@@ -52,32 +52,32 @@
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
 
-        <Button Style="{StaticResource StyleButton}" Grid.Row="5" Grid.Column="0">+/-</Button>
-     
-        <Button Style="{StaticResource StyleButton}" x:Name="btn0" Grid.Row="5" Grid.Column="1" Content="0" Click="numberButton_Click" />
-        <Button Style="{StaticResource StyleButton}" Grid.Row="5" Grid.Column="2">,</Button>
-        <Button Style="{StaticResource StyleButton}" x:Name="btnSum" Grid.Row="5" Grid.Column="3" Click="sumButton_click" >=</Button>
-        <Button Style="{StaticResource StyleButton}" x:Name="btn1" Grid.Row="4" Grid.Column="0" Click="numberButton_Click">1</Button>
-        <Button Style="{StaticResource StyleButton}" x:Name="btn2" Grid.Row="4" Grid.Column="1" Click="numberButton_Click">2</Button>
-        <Button Style="{StaticResource StyleButton}" x:Name="btn3" Grid.Row="4" Grid.Column="2" Click="numberButton_Click">3</Button>
-        <Button Style="{StaticResource StyleButton}" x:Name="btnPlus" Grid.Row="4" Grid.Column="3" Click="PlusButton_Click">+</Button>
-        <Button Style="{StaticResource StyleButton}" x:Name="btn4" Grid.Row="3" Grid.Column="0" Click="numberButton_Click">4</Button>
-        <Button Style="{StaticResource StyleButton}" x:Name="btn5" Grid.Row="3" Grid.Column="1" Click="numberButton_Click">5</Button>
-        <Button Style="{StaticResource StyleButton}" x:Name="btn6" Grid.Row="3" Grid.Column="2" Click="numberButton_Click">6.</Button>
-        <Button Style="{StaticResource StyleButton}" x:Name="btnMinus" Grid.Row="3" Grid.Column="3" Click="minusButton_Click">-</Button>
-        <Button Style="{StaticResource StyleButton}" x:Name="btn7" Grid.Row="2" Grid.Column="0" Click="numberButton_Click">7</Button>
-        <Button Style="{StaticResource StyleButton}" x:Name="btn8" Grid.Row="2" Grid.Column="1" Click="numberButton_Click">8</Button>
-        <Button Style="{StaticResource StyleButton}" x:Name="btn9" Grid.Row="2" Grid.Column="2" Click="numberButton_Click">9</Button>
-        <Button Style="{StaticResource StyleButton}" x:Name="btnMultiple" Grid.Row="2" Grid.Column="3" Click="multipleButton_Click">x</Button>
-        <Button Style="{StaticResource StyleButton}" Grid.Row="1" Grid.Column="0" Click="ClearButton">C</Button>
-        <Button Style="{StaticResource StyleButton}" Grid.Row="1" Grid.Column="1" Click="power2Button">x2</Button>
-        <Button Style="{StaticResource StyleButton}" Grid.Row="1" Grid.Column="2" Click="sqrtButton">sqrtz 2</Button>
-        <Button Style="{StaticResource StyleButton}" x:Name="btnDivision" Grid.Row="1" Grid.Column="3" Click="divisionButton_Click" Content=""/>
+        <Button Style="{StaticResource StyleButton}" Grid.Row="6" Grid.Column="0">+/-</Button>
+        <Button Style="{StaticResource StyleButton}" x:Name="btn0" Grid.Row="6" Grid.Column="1" Content="0" Click="numberButton_Click" />
+        <Button Style="{StaticResource StyleButton}" Grid.Row="6" Grid.Column="2">,</Button>
+        <Button Style="{StaticResource StyleButton}" x:Name="btnSum" Grid.Row="7" Grid.Column="3" Click="sumButton_click" >=</Button>
+        <Button Style="{StaticResource StyleButton}" x:Name="btn1" Grid.Row="5" Grid.Column="0" Click="numberButton_Click">1</Button>
+        <Button Style="{StaticResource StyleButton}" x:Name="btn2" Grid.Row="5" Grid.Column="1" Click="numberButton_Click">2</Button>
+        <Button Style="{StaticResource StyleButton}" x:Name="btn3" Grid.Row="5" Grid.Column="2" Click="numberButton_Click">3</Button>
+        <Button Style="{StaticResource StyleButton}" x:Name="btnPlus" Grid.Row="5" Grid.Column="3" Click="PlusButton_Click">+</Button>
+        <Button Style="{StaticResource StyleButton}" x:Name="btn4" Grid.Row="4" Grid.Column="0" Click="numberButton_Click">4</Button>
+        <Button Style="{StaticResource StyleButton}" x:Name="btn5" Grid.Row="4" Grid.Column="1" Click="numberButton_Click">5</Button>
+        <Button Style="{StaticResource StyleButton}" x:Name="btn6" Grid.Row="4" Grid.Column="2" Click="numberButton_Click">6</Button>
+        <Button Style="{StaticResource StyleButton}" x:Name="btnMinus" Grid.Row="4" Grid.Column="3" Click="minusButton_Click">-</Button>
+        <Button Style="{StaticResource StyleButton}" x:Name="btn7" Grid.Row="3" Grid.Column="0" Click="numberButton_Click">7</Button>
+        <Button Style="{StaticResource StyleButton}" x:Name="btn8" Grid.Row="3" Grid.Column="1" Click="numberButton_Click">8</Button>
+        <Button Style="{StaticResource StyleButton}" x:Name="btn9" Grid.Row="3" Grid.Column="2" Click="numberButton_Click">9</Button>
+        <Button Style="{StaticResource StyleButton}" x:Name="btnMultiple" Grid.Row="3" Grid.Column="3" Click="multipleButton_Click">x</Button>
+        <Button Style="{StaticResource StyleButton}" Grid.Row="2" Grid.Column="0" Click="ClearButton">C</Button>
+        <Button Style="{StaticResource StyleButton}" Grid.Row="2" Grid.Column="1" Click="power2Button">x2</Button>
+        <Button Style="{StaticResource StyleButton}" Grid.Row="2" Grid.Column="2" Click="sqrtButton">sqrtz 2</Button>
+        <Button Style="{StaticResource StyleButton}" x:Name="btnDivision" Grid.Row="2" Grid.Column="3" Click="divisionButton_Click" Content=""/>
 
-        <TextBox x:Name="resultbox" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" TextAlignment="Right" VerticalAlignment="Bottom" FontSize="30" IsReadOnly="True" Background="#232f34" Foreground="White"></TextBox>
-      
+        <TextBox x:Name="resultbox" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" Background="#232f34" TextAlignment="Right"  Foreground="White" FontSize="30" IsReadOnly="True" BorderBrush="#232f34" VerticalAlignment="Center"/>
+        <TextBox x:Name="memorybox" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" Background="#232f34" TextAlignment="Right"  Foreground="Gray" IsReadOnly="True" Margin="0" BorderBrush="#232f34" VerticalAlignment="Center" FontSize="25"/>
 
 
 
@@ -85,9 +85,9 @@
 
 
     </Grid>
-   
-        
-    
 
-    
+
+
+
+
 </Window>

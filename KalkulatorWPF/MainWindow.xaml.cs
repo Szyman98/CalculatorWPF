@@ -91,75 +91,84 @@ namespace KalkulatorWPF
 
 
 
-        private void sumButton_click(object sender, RoutedEventArgs e)
+        public void sumButton_click(object sender, RoutedEventArgs e)
         {
             switch(operation)
             {
                 case "Adding":
                     final = temp + double.Parse(output);
+                    memorybox.Text += output;
                     resultbox.Text = final.ToString();
+                    output = final.ToString();
                     break;
                 case "Subtarction":
                     final = temp - double.Parse(output);
+                    memorybox.Text += output;
                     resultbox.Text = final.ToString();
+                    output = final.ToString();
                     break;
                 case "Multiplication":
                     final = temp * double.Parse(output);
+                    memorybox.Text += output;
                     resultbox.Text = final.ToString();
+                    output = final.ToString();
                     break;
                 case "Division":
                     final = temp / double.Parse(output);
+                    memorybox.Text += output;
                     resultbox.Text = final.ToString();
+                    output = final.ToString();
                     break;
+                default:
+                    MessageBox.Show("cos poszlo nie tak");
+                    break;
+
                 
-
-
-
-
-
             }
 
            
         }
 
-        private void PlusButton_Click(object sender, RoutedEventArgs e)
+        public void PlusButton_Click(object sender, RoutedEventArgs e)
         {
             operation = "Adding";
-            //da
             chceckoutput();
-        }
+            memorybox.Text = temp.ToString() + "+";
+           
+                    }
 
-        private void minusButton_Click(object sender, RoutedEventArgs e)
+        public void minusButton_Click(object sender, RoutedEventArgs e)
         {
             operation = "Subtarction";
             chceckoutput();
+            memorybox.Text = temp.ToString() + "-";
 
         }
 
-        private void multipleButton_Click(object sender, RoutedEventArgs e)
+        public void multipleButton_Click(object sender, RoutedEventArgs e)
         {
 
             operation = "Multiplication";
             chceckoutput();
+            memorybox.Text = temp.ToString() + "*";
         }
 
-        private void divisionButton_Click(object sender, RoutedEventArgs e)
+        public void divisionButton_Click(object sender, RoutedEventArgs e)
         {
             operation = "Division";
-
             chceckoutput();
+            memorybox.Text = temp.ToString() + "/";
 
         }
 
-        private void ClearButton(object sender, RoutedEventArgs e)
+        public void ClearButton(object sender, RoutedEventArgs e)
         {
             output = "";
-            
-
             resultbox.Text = output;
+            memorybox.Text = output;
         }
 
-        private void sqrtButton(object sender, RoutedEventArgs e)
+        public void sqrtButton(object sender, RoutedEventArgs e)
         {
             if (output != "")
             {
@@ -176,7 +185,7 @@ namespace KalkulatorWPF
 
         }
 
-        private void power2Button(object sender, RoutedEventArgs e)
+        public void power2Button(object sender, RoutedEventArgs e)
         {
             if (output != "")
             {
