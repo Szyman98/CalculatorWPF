@@ -65,7 +65,7 @@
         <Button Style="{StaticResource StyleButton}" x:Name="btnPlus" Grid.Row="4" Grid.Column="3" Click="PlusButton_Click">+</Button>
         <Button Style="{StaticResource StyleButton}" x:Name="btn4" Grid.Row="3" Grid.Column="0" Click="numberButton_Click">4</Button>
         <Button Style="{StaticResource StyleButton}" x:Name="btn5" Grid.Row="3" Grid.Column="1" Click="numberButton_Click">5</Button>
-        <Button Style="{StaticResource StyleButton}" x:Name="btn6" Grid.Row="3" Grid.Column="2" Click="numberButton_Click">6</Button>
+        <Button Style="{StaticResource StyleButton}" x:Name="btn6" Grid.Row="3" Grid.Column="2" Click="numberButton_Click">6.</Button>
         <Button Style="{StaticResource StyleButton}" x:Name="btnMinus" Grid.Row="3" Grid.Column="3" Click="minusButton_Click">-</Button>
         <Button Style="{StaticResource StyleButton}" x:Name="btn7" Grid.Row="2" Grid.Column="0" Click="numberButton_Click">7</Button>
         <Button Style="{StaticResource StyleButton}" x:Name="btn8" Grid.Row="2" Grid.Column="1" Click="numberButton_Click">8</Button>
