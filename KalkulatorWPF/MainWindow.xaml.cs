@@ -29,6 +29,9 @@ namespace KalkulatorWPF
         {
             InitializeComponent();
             btnDivision.Content = "\u00F7";
+            sqrtButton1.Content = "\u221A";
+            
+          
         }
 
         
